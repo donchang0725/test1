@@ -1,0 +1,26 @@
+<script>
+debugger
+function a() {
+    let b = 1;
+    if (b === window.b) {
+        console.log(b)
+    }
+    console.log('a');
+}
+a();
+
+window.b = 'b';
+if (b === window.b) {
+    console.log(b)
+}
+
+/* var c = function(){  //익명함수
+    console.log('c');
+} */
+
+c();
+
+function c(){
+    console.log('c');
+}
+</script>
