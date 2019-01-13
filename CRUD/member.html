@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="member.css">
+    <script src="member.js"></script>
+  </head>
+  <body>
+    <h1>CRUD</h1>
+    <div>
+      <h4>Read</h4>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Created Date</th>
+            <th>Modify</th>
+          </tr>
+        </thead>
+        <tbody id="tbodyMember">
+          <tr class="d-none">
+            <td><input type="text" placeholder="Name" name="member.name" /></td>
+            <td><input type="text" placeholder="Age" name="member.age" /></td>
+            <td></td>
+            <td>
+              <button class="pointer" onclick="update(event)">
+                <span class="d-none"><i class="fa fa-circle-o-notch fa-spin fa-fw margin-bottom"></i></span> Update
+              </button>
+              <button class="pointer" onclick="del(event)">
+                <span class="d-none"><i class="fa fa-circle-o-notch fa-spin fa-fw margin-bottom"></i></span> Delete
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <hr class="d-block" />
+    <div>
+      <h2>Create</h2>
+      <input type="text" placeholder="Name" id="member.name" />
+      <input type="text" placeholder="Age" id="member.age" />
+      <button class="pointer" onclick="create(event)">
+        <span class="d-none"><i class="fa fa-circle-o-notch fa-spin fa-fw margin-bottom"></i></span> Create
+      </button>
+    </div>
+  </body>
+</html>
