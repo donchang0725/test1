@@ -1,0 +1,16 @@
+#popupBody {
+    border: #aaaaaa 1px solid;
+    display: none;
+  }
+  
+  #popupKeyShift {
+    display: none;
+  }
+  
+  #popupKeyCtrl {
+    display: none;
+  }
+  
+  #popupKeyAlt {
+    display: none;
+  }
