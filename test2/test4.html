@@ -1,0 +1,15 @@
+<script>
+debugger
+function a(){
+    console.log('a')
+}
+function b(name){
+    
+    name()
+}
+b(a)
+
+b(function () {
+    console.log('c')
+})
+</script>
